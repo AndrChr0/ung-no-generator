@@ -16,9 +16,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 header {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2rem;
+}
+
+button {
+    font-size: large;
+    padding: 1rem;
+    margin-top: 40px;
+    border: solid 2px var(--boxshadow-color);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    border-color: red;
 }

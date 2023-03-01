@@ -3,7 +3,10 @@ document.title = mainTitle;
 
 const ungTemp = "https://www.ung.no/oss/";
 
-const randomizer = Math.floor(Math.random() * 900000) + 100000;
+const min = 200000;
+const max = 515800;
+
+const randomizer = Math.floor(Math.random() * (max - min + 1)) + min;
 
 let anchor = document.createElement("a");
 

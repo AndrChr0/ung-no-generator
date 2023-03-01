@@ -1,0 +1,77 @@
+:root {
+  --main-text-color: rgb(255, 255, 255);
+  --hover-text-color: rgb(255, 0, 0);
+  --boxshadow-color: rgb(0, 0, 0);
+}
+
+*, *::before, *::after {
+  margin: 0;
+}
+
+body {
+  background-image: url(The-Wall-HERO.jpg);
+  background-size: cover;
+  font-family: sans-serif;
+  background-attachment: fixed;
+}
+
+.container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+}
+
+.header__main {
+  font-size: 110px;
+  color: var(--main-text-color);
+  margin-left: 30px;
+}
+
+.sub {
+  font-size: 60px;
+  color: var(--main-text-color);
+  margin-left: 50px;
+}
+
+#info a {
+  font-size: 50px;
+  color: var(--main-text-color);
+  background-color: black;
+  padding: 2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: monospace;
+  border: solid 2px white;
+  box-shadow: 5px 5px 10px 5px var(--boxshadow-color);
+}
+
+#info a:hover {
+  background-color: rgb(53, 53, 53);
+}
+
+@media screen and (max-width: 700px) {
+  .header__main {
+    font-size: 50px;
+  }
+  .sub {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #info a {
+    font-size: 25px;
+  }
+  .header__main {
+    font-size: 40px;
+  }
+  .sub {
+    margin: 10px 30px;
+  }
+}/*# sourceMappingURL=index.css.map */

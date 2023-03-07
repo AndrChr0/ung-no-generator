@@ -12,10 +12,15 @@ let anchor = document.createElement("a");
 
 let textLink = document.createTextNode("Bli Opplyst");
 
-anchor.href = ungTemp + randomizer;
+anchor.target = "_blank";
 
-anchor.appendChild(textLink); 
-document.body.appendChild(anchor); 
+anchor.onclick = function () {
+  window.open(ungTemp + randomizer);
+  window.location.reload();
+};
+
+anchor.appendChild(textLink);
+document.body.appendChild(anchor);
 
 const displayLink = document.getElementById("info");
-displayLink.appendChild(anchor); 
+displayLink.appendChild(anchor);
